@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Fraunces', serif;
 }
 :root {
     --red-400: hsl(7, 99%, 70%);
@@ -17,7 +20,6 @@
     --width: 375px;
     --width-lg: 800px;
 }
-
 body {
     display: flex;
     justify-content: center;
@@ -25,6 +27,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--grey-950);
+    font-family: 'Fraunces', serif;
 }
 
 .txt_arrow {
@@ -196,7 +199,7 @@ padding: 3rem 1.5rem;
     color: var(--grey-400);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .desktop {
         display: none;
     }
@@ -301,10 +304,18 @@ padding: 3rem 1.5rem;
         text-decoration: underline;
         text-decoration-color: var(--white);
     }
+    .img_gallery img {
+        width: calc(var(--width) / 2);
+        height: 100%;
+    }
+
+    .grid_container img {
+        width: var(--width);
+        height: 100%;
+    }
 }
 
-
-@media (min-width: 500px) {
+@media (min-width: 800px) {
     .footer {
         width: var(--width-lg);
     }
