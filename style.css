@@ -18,7 +18,7 @@
     --grey-400: hsl(210, 4%, 67%);
     --white: hsl(0, 100%, 100%);
     --width: 375px;
-    --width-lg: 800px;
+    --width-lg: 1000px;
 }
 body {
     display: flex;
@@ -290,7 +290,7 @@ padding: 3rem 1.5rem;
     }
     .nav_item.active {
         background-color: var(--yellow-500);
-        color: black;
+        color: var(--grey-950);
         border: none;
         border-radius: 20px;
         padding: .6rem 1.4rem;
@@ -430,6 +430,7 @@ padding: 3rem 1.5rem;
     }
     .nav_list {
         display: flex;
+        gap: .5rem;
         list-style-type: none;
     }
     .nav_item {
@@ -445,6 +446,14 @@ padding: 3rem 1.5rem;
         background-color: rgba(255, 255, 255, 0.3);
         color: var(--white);
         cursor: pointer;
+        transform: scale(1.05);
+        padding: .6rem 1rem;
+    }
+    .nav_item.active {
+        border: none;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: var(--grey-950);
         transform: scale(1.05);
         padding: .6rem 1rem;
     }
