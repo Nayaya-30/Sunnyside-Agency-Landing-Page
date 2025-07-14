@@ -18,7 +18,7 @@
     --grey-400: hsl(210, 4%, 67%);
     --white: hsl(0, 100%, 100%);
     --width: 375px;
-    --width-lg: 1300px;
+    --width-lg: 1350px;
 }
 body {
     display: flex;
